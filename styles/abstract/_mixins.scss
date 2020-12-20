@@ -1,0 +1,18 @@
+@mixin btn-primary {
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, $soft-red, $btn-gradient);
+    font-family: 'FiraGO';
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+        animation: hoverBtn .3s forwards;
+    }
+    &:active {
+        animation: activeBtn .3s forwards;
+    }
+}

@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    svg {
+        display: block;
+        max-width: 15%;
+    }
+    div {
+        font-weight: 500;
+    }
+}
+
+section {
+    margin: 0 40px;
+    h1 {
+        font-size: $h1;
+    }
+    
+}
