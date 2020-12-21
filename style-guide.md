@@ -12,7 +12,7 @@
 
 ### Box-Shadow
 
-- 0 10px 20px 0 #29292A;
+- 0 2px 10px -5px #29292A;
 
 ### Font
 
