@@ -1,0 +1,118 @@
+.contact-form-section {
+  transform: translateY(350px);
+  .form-col-1 {
+    width: 45%;
+    float: left;
+    h2 {
+      width: 70%;
+    }
+    #your-needs {
+      img {
+        display: block;
+      }
+      margin: 40px 0;
+    }
+  }
+}
+.form-col-2 {
+  width: 45%;
+  display: inline-block;
+  transform: translate(100px, 70px);
+  form > * {
+    display: block;
+    margin: 10px 0;
+  }
+  form {
+    input {
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      outline: none;
+      border: 1.5px solid $input-border;
+      font-family: "FiraGO";
+    }
+    textarea {
+      resize: none;
+      outline: none;
+      border-radius: 5px;
+      height: 180px;
+      width: 100%;
+      border: 1.5px solid $input-border;
+      padding: 10px;
+      font-family: "FiraGO";
+      // &::placeholder {
+      //   padding: 10px;
+      // }
+    }
+    button {
+      background: $soft-red;
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+}
+
+.footer-section {
+  #footer-bg {
+    img {
+      z-index: -99;
+      margin: 0;
+      position: absolute;
+     // bottom: -100%;
+     left: 0;
+      top: -50%;
+    }
+  }
+
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  .flex-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    list-style: none;
+    .col-1-footer {
+      max-width: 30%;
+      img {
+        max-width: 50%;
+      }
+    }
+    .col-2-footer> * {
+      margin: 20px 0;
+    }
+    .col-1-footer > * {
+      margin: 15px 0;
+    }
+    .col-3-footer > * {
+      margin: 40px 0;
+    }
+    .col-3-footer {
+      position: relative;
+      input {
+        position: relative;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        outline: none;
+        border: none;
+        font-family: "FiraGO";
+        background-color: #21425252;
+        &::placeholder {
+          color: $dark-blue;
+        }
+      }
+      button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-0%, -80%);
+        background: transparent;
+        animation: none;
+        z-index: 99;
+      }
+    }
+  }
+}
+

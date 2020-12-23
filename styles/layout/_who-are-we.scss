@@ -1,0 +1,47 @@
+.who-are-we-section {
+    position: relative;
+    margin: 750px 40px;
+    h1 {
+        text-align: center;
+    }
+    #who-are-we-img-1 {
+        img {
+            float: left;
+            min-width: 50%;
+            display: block;
+        }
+        margin: 100px 0;
+    }
+    .who-are-we-content-1 {
+        transform: translateY(100px);
+    }
+    .who-are-we-content-1 > * {
+        margin: 80px 0;
+    }
+    .who-are-we-content-2  > * {
+        margin: 80px 0;
+    }
+    p {
+        line-height: 1.5;
+        margin-bottom: 50px;
+    }
+    .learn-more {
+        color: $soft-red;
+    }
+    .who-are-we-row-2 {
+        transform: translateY(100px);
+        float: left;
+        .who-are-we-content-2 {
+            max-width: 50%;
+            float: left;
+            p {
+                max-width: 95%;
+            }
+        }
+        img {
+            float: right;
+            max-width: 50%;
+            display: block;
+        }
+    }
+}

@@ -10,7 +10,9 @@
     font-family: "FiraGO";
     src: url(/fonts/FiraGO-Bold.otf) url(/fonts/FiraGO-ExtraBold.otf) url(/fonts/FiraGO-Medium.otf) url(/fonts/FiraGO-Regular.otf) url(/fonts/FiraGO-SemiBold.otf);
 }
-
+html,body {
+    scroll-behavior: smooth;
+}
 body {
     max-width: 1440px;
     margin: 0 auto;
@@ -24,10 +26,21 @@ a {
     color: $dark-blue;
     transition: all .2s;
     &:hover {
-        border-bottom: 2px solid $soft-red;
+        border-bottom: 3px solid $soft-red;
     }
 }
-
+h1 {
+    font-size: $h1;
+}
+h2 {
+    font-size: $h2;
+}
+h3 {
+    font-size: $h3;
+}
+h4 {
+    font-size: $h4;
+}
 button {
     @include btn-primary;
 }

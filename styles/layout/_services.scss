@@ -1,0 +1,93 @@
+.services-section {
+    transform: translateY(150px);
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        margin: 100px 0px 50px 30px;
+    }
+    .grid {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+        justify-content:center;
+        img {
+            position: absolute;
+            right: -80px;
+            top: -150px;
+        }
+    }
+    .box {
+        position: relative;
+        box-shadow: 0 2px 10px -5px #29292A;
+        border-radius: 10px;
+        height: 200px;
+        width: 250px;
+        h4 {
+            margin: 40px 20px;
+        }
+    }
+    .approach {
+        max-width: 40%;
+    }
+    .flex-row-approach-layout {
+        float: left;
+        margin: 0 30px 0 30px;
+        .circle {
+            height: 70px;
+            width: 70px;
+            background-color: #F4F5F7;
+            border-radius: 50%;
+            transform: translate(60px, 60px);
+            position: relative;
+            &:not(:nth-child(1)) {
+                margin: 200px 0px;
+            }
+        }
+        .arrow {
+            position: absolute;
+            transform: translate(-50%,0%);
+            top: 100%;
+            left: 50%;
+            height: 80px;
+            width: 3px;
+            background-color: #FFC785;
+            margin-top: 10px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 10px solid orange;
+                transform: rotate(180deg) translate(0%,-20%);
+                top: 100%;
+                left: -100%;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                transform: translate(-50%,20%);
+                top: 100%;
+                left: 50%;
+                height: 80px;
+                width: 3px;
+                margin-bottom: 10px;
+                background-color: #FFC785;
+            }
+        }
+    }
+    .approach-svg {
+        position: relative;
+        img {
+            //display: inline-block;
+            transform: translate(-100px, 150px);
+            float: right;
+            max-width: 45%;
+        }
+    }
+}

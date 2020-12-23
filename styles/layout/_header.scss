@@ -1,6 +1,23 @@
+header, section {
+    position: relative;
+}
+#wave-hero-bg{
+    position: absolute;
+    z-index: -99;
+    top: 0;
+}
+// nav {
+//     position: sticky;
+//     top: 0;
+//     z-index: -99;
+//     width: 100%;
+// }
 nav {
+    // position: sticky;
+    // top: 0;
+    position: sticky;
+    top: 0;
     display: flex;
-    flex-flow: row;
     justify-content: space-around;
     align-items: center;
     svg {
@@ -13,9 +30,27 @@ nav {
 }
 
 section {
-    margin: 0 40px;
-    h1 {
-        font-size: $h1;
+    margin: 40px 40px;
+    color: $dark-blue;
+    user-select: none;
+
+    .hero-text-intro {
+        margin-top: 50px;
+        float: left;
+        max-width: 40%;
     }
-    
+    button {
+        margin: 60px 0px;
+
+    }
+    .know-more {
+        margin: 0 20px;
+    }
+    .hero-img { 
+        img {
+            display: block;
+            float: right;
+            max-width: 50%;
+        }
+    }
 }
