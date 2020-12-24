@@ -1,0 +1,173 @@
+
+//pricing grid
+@media (max-width: 1120px) {
+    .pricing-section .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        //grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: minmax(600px, auto);
+        grid-gap: 50px;
+    }
+}
+
+
+
+@media (max-width: 910px) {
+
+    // nav and header
+    nav {
+        justify-content: right;
+        position: relative;
+        .header-btn,
+        .link{
+            display: none;
+        }
+
+        svg {
+            margin-left: 50px;
+            max-width: 25%;
+        }
+
+        #hamburger,
+        #close-op {
+            margin-right: 50px;
+            height: 28px;
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    // hero image n content
+    .hero {
+        margin: 40px 20px;
+        color: $dark-blue;
+        user-select: none;
+
+        .hero-text-intro {
+            margin-top: 50px;
+            float: left;
+            max-width: 50%;
+        }
+
+        button {
+            margin: 60px 0px;
+        }
+
+        .know-more {
+            margin: 0 20px;
+        }
+
+        .hero-img {
+            img {
+                display: block;
+                float: right;
+                max-width: 45%;
+            }
+        }
+    }
+
+    // pricing icons
+
+    .pricing-section{
+        img {
+            width: 45%;
+        }
+        .card-3 img {
+            width: 30%;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .header-btn,
+    .link {
+        display: block;
+    }
+
+    .pricing-section {
+        .pricing-grid {
+            margin: 0 40px;
+            grid-template-columns: repeat(3, minmax(10%, 1fr));
+            grid-auto-rows: minmax(500px, auto);
+            grid-gap: 50px;
+        }
+    }
+
+    .services-section {
+        transform: translateY(0px);
+
+        .grid {
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+        }
+    }
+
+        // who are we
+        .who-are-we-section {
+            margin: 550px 40px;
+            #who-are-we-img-1 {
+                img {
+                    max-width: 50%;
+                }
+            }
+            .who-are-we-content-1 {
+                transform: translateY(20px);
+            }
+
+            .who-are-we-row-2 {
+                transform: translateY(130px);
+                .who-are-we-content-2 {
+                    transform: translateY(-70px);
+                    p {
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+
+        // services
+        .services-section {
+            transform: translateY(200px);
+        }
+
+        // project section
+        .project-section {
+            margin-top: 900px;
+        }
+
+        // service
+        .services-section .approach-svg {
+            img {
+                transform: translate(-30px, 150px);
+                max-width: 55%;
+            }
+        }
+ 
+}
+
+@media (max-width: 1040px) {
+    .project-section {
+        transform: translateY(100px);
+    }
+
+}
+
+
+
+// who are we section
+@media (max-width: 888px) {
+    .who-are-we-section .who-are-we-content-1 > * {
+        margin: 40px 0;
+    }
+    .who-are-we-section .who-are-we-row-2  .who-are-we-content-2{
+        transform: translateY(10px);
+    }
+    .who-are-we-section .who-are-we-content-2 > * {
+        margin: 40px 0;
+    }
+}
+

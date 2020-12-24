@@ -1,0 +1,36 @@
+@media (max-width: 799px) {
+
+    body {
+        max-width: 799px;
+        overflow-x: hidden;
+    }
+    .grid-projects {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+
+        .box {
+            grid-column: unset !important;
+            grid-row: unset !important;
+        }
+    }
+
+    .hero {
+        .hero-text-intro {
+            margin-top: 50px;
+            float: none;
+            text-align: center;
+            max-width: 100%;
+        }
+        .hero-img {
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 100%;
+                display: block;
+                float: none;
+                height: 400px;
+            }
+        }
+    }
+
+}
