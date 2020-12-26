@@ -10,13 +10,18 @@
 nav {
    // background-color: rgb(46, 46, 46);
     //color: white;
-//    z-index: 99;
-//    position: sticky;
-//    top: 0;
-   // height: 70px;
+    // z-index: 99;
+    // position: sticky;
+    // top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .container-links {
+        display: flex;
+        height: inherit;
+        width: 50%;
+        justify-content: space-evenly;
+    }
     svg {
         display: block;
         max-width: 15%;
@@ -30,7 +35,7 @@ nav {
 }
 
 section {
-    margin: 40px 40px;
+    margin: 40px 30px;
     color: $dark-blue;
     user-select: none;
 
